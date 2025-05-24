@@ -36,10 +36,16 @@ if __name__ == "__main__":
     with open("docs/index.html", "wt", encoding = "utf-8") as fObj:
         # Write header ...
         fObj.write("<!DOCTYPE HTML>\n")
-        fObj.write("<html lang=\"en-gb\" xmlns=\"http://www.w3.org/1999/xhtml\">\n")
+        fObj.write("<html lang=\"en-gb\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:svg=\"http://www.w3.org/2000/svg\">\n")
         fObj.write("    <head>\n")
+        fObj.write("        <link rel=\"canonical\" href=\"https://guymer.github.io/\"/>\n")
+        fObj.write("        <link rel=\"license\" href=\"https://www.apache.org/licenses/LICENSE-2.0/\"/>\n")
         fObj.write("        <meta charset=\"utf-8\"/>\n")
+        fObj.write("        <meta name=\"author\" content=\"Thomas Guymer\"/>\n")
+        fObj.write(f'        <meta name=\"copyright\" content=\"© 2025 - {pyguymer3.now().strftime("%Y")} Thomas Guymer\"/>\n')
+        fObj.write("        <meta name=\"description\" content=\"A dashboard of the SVG badges for all of the CI on my public GitHub repositories\"/>\n")
         fObj.write("        <meta name=\"generator\" content=\"Python\"/>\n")
+        fObj.write("        <meta name=\"robots\" content=\"index,follow\"/>\n")
         fObj.write("        <title>GitHub CI Status</title>\n")
         fObj.write("    </head>\n")
         fObj.write("    <body>\n")
