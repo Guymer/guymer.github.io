@@ -21,7 +21,3 @@ shellcheck.log
 *.o
 *.so
 *.so.dSYM
-src/main
-
-# Hide data ...
-nubase2020/nubase_4.mas20.txt
