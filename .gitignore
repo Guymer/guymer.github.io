@@ -1,0 +1,27 @@
+# OS generated files ...
+.directory
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Hide compiled code ...
+__pycache__
+
+# Hide output of MyPy/PyLint/ShellCheck ...
+mypy.log
+pylint.log
+shellcheck.log
+
+# Ignore compiler generated files ...
+*.mod
+*.o
+*.so
+*.so.dSYM
+src/main
+
+# Hide data ...
+nubase2020/nubase_4.mas20.txt
