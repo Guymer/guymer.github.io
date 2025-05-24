@@ -1,4 +1,4 @@
-!["mypy" GitHub Action Status](https://github.com/Guymer/guymer.github.io/actions/workflows/mypy.yaml/badge.svg) !["pylint" GitHub Action Status](https://github.com/Guymer/guymer.github.io/actions/workflows/pylint.yaml/badge.svg)
+!["mypy" GitHub Action Status](https://github.com/Guymer/guymer.github.io/actions/workflows/mypy.yaml/badge.svg) !["profile" GitHub Action Status](https://github.com/Guymer/guymer.github.io/actions/workflows/profile.yaml/badge.svg) !["pylint" GitHub Action Status](https://github.com/Guymer/guymer.github.io/actions/workflows/pylint.yaml/badge.svg)
 
 This repository contains [the static files](docs) served on [my GitHub Pages site](https://guymer.github.io) and the scripts required to make them.
 
