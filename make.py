@@ -19,7 +19,7 @@ if __name__ == "__main__":
     # Create argument parser and parse the arguments ...
     parser = argparse.ArgumentParser(
            allow_abbrev = False,
-            description = "Make a HTML web page which contains all the SVG badges for all of the CI on my public GitHub repositories.",
+            description = "Make a dashboard of the SVG badges for all of the GitHub Actions on my public GitHub repositories.",
         formatter_class = argparse.ArgumentDefaultsHelpFormatter,
     )
     parser.add_argument(
@@ -43,16 +43,16 @@ if __name__ == "__main__":
         fObj.write("        <meta charset=\"utf-8\"/>\n")
         fObj.write("        <meta name=\"author\" content=\"Thomas Guymer\"/>\n")
         fObj.write(f'        <meta name=\"copyright\" content=\"© 2025 - {pyguymer3.now().strftime("%Y")} Thomas Guymer\"/>\n')
-        fObj.write("        <meta name=\"description\" content=\"A dashboard of the SVG badges for all of the CI on my public GitHub repositories\"/>\n")
+        fObj.write("        <meta name=\"description\" content=\"A dashboard of the SVG badges for all of the GitHub Actions on my public GitHub repositories\"/>\n")
         fObj.write("        <meta name=\"generator\" content=\"Python\"/>\n")
         fObj.write("        <meta name=\"robots\" content=\"index,follow\"/>\n")
-        fObj.write("        <title>GitHub CI Status</title>\n")
+        fObj.write("        <title>GitHub Actions Badges</title>\n")
         fObj.write("    </head>\n")
         fObj.write("    <body>\n")
         fObj.write("        <main>\n")
         fObj.write("            <article>\n")
         fObj.write("                <header>\n")
-        fObj.write("                    <h1>GitHub CI Status</h1>\n")
+        fObj.write("                    <h1>GitHub Actions Badges</h1>\n")
         fObj.write("                </header>\n")
 
         # Start session ...
@@ -87,7 +87,7 @@ if __name__ == "__main__":
                     print(f"\"{dName}\" is not public on GitHub.")
                     continue
 
-                print(f"Writing badges for \"{dName}\" ...")
+                print(f"Writing SVG badges for \"{dName}\" ...")
 
                 # Write data ...
                 fObj.write(f"                <h2><a href=\"{gUrl}\" title=\"“{os.path.basename(dName)}” on GitHub\">{os.path.basename(dName)}</a></h2>\n")
