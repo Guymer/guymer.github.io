@@ -1,0 +1,14 @@
+.editorconfig
+.github/FUNDING.yml
+.github/workflows/mypy.yaml
+.github/workflows/profile.yaml
+.github/workflows/pylint.yaml
+.gitignore
+.mypy.ini
+.pylint.ini
+.shellcheckrc
+docs/index.html
+LICENCE.txt
+make.py
+README.md
+requirements.txt
