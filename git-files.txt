@@ -8,6 +8,7 @@
 .pylint.ini
 .shellcheckrc
 docs/index.html
+git-files.txt
 LICENCE.txt
 make.py
 README.md
