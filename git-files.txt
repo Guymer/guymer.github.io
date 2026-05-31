@@ -2,7 +2,6 @@
 .github/FUNDING.yml
 .github/workflows/mypy.yaml
 .github/workflows/profile.yaml
-.github/workflows/pylint.yaml
 .gitignore
 .mypy.ini
 .pylint.ini
