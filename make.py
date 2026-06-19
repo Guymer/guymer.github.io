@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Use the proper idiom in the main module ...
-# NOTE: See https://docs.python.org/3.12/library/multiprocessing.html#the-spawn-and-forkserver-start-methods
+# NOTE: See https://docs.python.org/3.13/library/multiprocessing.html#the-spawn-and-forkserver-start-methods
 if __name__ == "__main__":
     # Import standard modules ...
     import argparse
@@ -33,7 +33,7 @@ if __name__ == "__main__":
     # **************************************************************************
 
     # Open output file ...
-    with open("docs/index.html", "wt", encoding = "utf-8") as fObj:
+    with open("docs/index.html", mode = "wt", encoding = "utf-8") as fObj:
         # Write header ...
         fObj.write("<!DOCTYPE HTML>\n")
         fObj.write("<html lang=\"en-gb\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:svg=\"http://www.w3.org/2000/svg\">\n")
